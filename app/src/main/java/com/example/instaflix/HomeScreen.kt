@@ -23,7 +23,6 @@ import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -128,13 +127,11 @@ fun Header(modifier: Modifier, principalMovie: MovieUIEntity) {
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    IconButton(onClick = {}) {
-                        Icon(
-                            imageVector = Icons.Default.Check,
-                            contentDescription = null,
-                            tint = Color.White
-                        )
-                    }
+                    Icon(
+                        imageVector = Icons.Default.Check,
+                        contentDescription = null,
+                        tint = Color.White
+                    )
                     Text(color = Color.White, text = "My List")
                 }
                 Row(
@@ -158,7 +155,7 @@ fun Header(modifier: Modifier, principalMovie: MovieUIEntity) {
                         contentDescription = null,
                         tint = Color.White
                     )
-                    Text(color = Color.White, text = "My List")
+                    Text(color = Color.White, text = "Info")
                 }
             }
         }
